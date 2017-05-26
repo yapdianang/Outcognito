@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Outcognito Mode",
+  "version": "0.0.1",
+
+  "description": "The Internet's search history.",
+  "icons": {"128": "img.png"},
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["outcognito.js"]
+    }
+  ]
+}
