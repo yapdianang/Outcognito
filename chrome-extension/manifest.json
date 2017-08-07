@@ -1,15 +1,19 @@
 {
-  "manifest_version": 2,
-  "name": "Outcognito Mode",
-  "version": "0.0.1",
+    "manifest_version": 2,
 
-  "description": "The Internet's search history.",
-  "icons": {"128": "img.png"},
+    "name": "Excognito Mode",
+    "description": "The search history of the Internet tweeted in one place. Find out what people are searching for.",
+    "version": "1.0",
 
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["outcognito.js"]
-    }
-  ]
+    "browser_action":{
+        "default_icon": "Excognito.jpg",
+        "default_title": "https://twitter.com/excognitomode"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["excognito.js"]
+        }
+    ]
 }
